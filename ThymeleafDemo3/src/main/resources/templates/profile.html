@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div th:if="${modelIsAdmin}">
+		<h3> Welcome : ADMIN </h3>
+	</div>
+	
+	<div th:if="${not modelIsAdmin}">
+		<h3> Welcome : USER </h3>
+	</div>
+
+	<div th:if="${100 < 200}">
+		<h3> hello </h3>
+	</div>
+
+</body>
+</html>

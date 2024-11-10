@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div th:switch="${modelDay}">
+		<span th:case="'Monday'"> Its Monday </span>
+		<span th:case="'Tuesday'"> Its Tuesday </span>
+		<span th:case="'Wednesday'"> Its Wednesday </span>
+		<span th:case="'Thrusday'"> Its Thrusday </span>
+		<span th:case="'Friday'"> Its Friday </span>
+		<span th:case="'Saturday'"> Its Saturday </span>
+		<span th:case="'Sunday'"> Its Sunday </span>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h3> <span th:text="${modelNamesList}"></span> </h3>
+	
+	<ul>
+		<li th:each="name : ${modelNamesList}">
+			<span th:text="${name}"></span>
+		</li>
+	</ul> <br/> <br/>
+	
+	<ul>
+		<li th:each="name : ${modelNamesList}" th:text="${name}"></li>
+	</ul>
+
+</body>
+</html>
